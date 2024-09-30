@@ -485,8 +485,8 @@ efi_status_t efi_main(
 	log(u"Bootloader started")	;
 
 	load_kernel_file();
-	//boot_elf_kernel();	
-	chainload_linux_efi_stub();
+	boot_elf_kernel();	
+//	chainload_linux_efi_stub();
 	//bootloader_loop();
 	while(1){};
 	return 0;
